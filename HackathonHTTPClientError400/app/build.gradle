@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.example.hackathon_httpclienterror_400'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.hackathon_httpclienterror_400"
         minSdk 22
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -47,8 +47,4 @@ dependencies {
 
     // Glide
     implementation "com.github.bumptech.glide:glide:$glide_version"
-
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
