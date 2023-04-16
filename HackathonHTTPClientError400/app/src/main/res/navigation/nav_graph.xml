@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/student_list">
+
+    <fragment
+        android:id="@+id/student_list"
+        android:name="com.example.hackathon_httpclienterror_400.student_list.ui.StudentListFragment"
+        tools:layout="@layout/fragment_student_list">
+        <action
+            android:id="@+id/action_student_list_to_profile"
+            app:destination="@id/profile" />
+<!--        <action-->
+<!--            android:id="@+id/action_student_list_to_main_frag"-->
+<!--            app:destination="@id/main_frag" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.hackathon_httpclienterror_400.ui.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="id"
+            app:argType="long"
+            app:nullable="false" />
+    </fragment>
+    <!--    <fragment-->
+    <!--        android:id="@+id/register"-->
+    <!--        android:name="com.example.hackatonapplication.feature.dashboard.ui.DashboardFragment"-->
+    <!--        tools:layout="@layout/fragment_dashboard">-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_register_to_sign_in"-->
+    <!--            app:destination="@id/sign_in" />-->
+    <!--    </fragment>-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/sign_in"-->
+    <!--        android:name="com.example.hackatonapplication.feature.dashboard.ui.DashboardFragment"-->
+    <!--        tools:layout="@layout/fragment_dashboard">-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_sign_in_to_main_frag"-->
+    <!--            app:destination="@id/main_frag" />-->
+    <!--    </fragment>-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/main_frag"-->
+    <!--        android:name="com.example.hackatonapplication.feature.dashboard.ui.DashboardFragment"-->
+    <!--        tools:layout="@layout/fragment_dashboard">-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_main_frag_to_student_list"-->
+    <!--            app:destination="@id/student_list" />-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_main_frag_to_lesson_list"-->
+    <!--            app:destination="@id/lesson_list" />-->
+    <!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/lesson_list"-->
+<!--        android:name="com.example.hackatonapplication.feature.dashboard.ui.DashboardFragment"-->
+<!--        tools:layout="@layout/fragment_dashboard">-->
+<!--        <action-->
+<!--            android:id="@+id/action_lesson_list_to_lesson_example"-->
+<!--            app:destination="@id/lesson_example" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/lesson_example"-->
+<!--        android:name="com.example.hackatonapplication.feature.dashboard.ui.DashboardFragment"-->
+<!--        tools:layout="@layout/fragment_dashboard">-->
+<!--    </fragment>-->
+
+</navigation>

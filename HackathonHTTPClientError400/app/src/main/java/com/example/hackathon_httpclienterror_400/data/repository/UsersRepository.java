@@ -13,6 +13,10 @@ public class UsersRepository {
         return UsersApiService.getInstance().getUsers();
     }
 
+    public static Call<User> getUser(long id) {
+        return UsersApiService.getInstance().getUser(id);
+    }
+
     public static Call<User> addUser(User user){
         return UsersApiService.getInstance().addUser(user);
     }

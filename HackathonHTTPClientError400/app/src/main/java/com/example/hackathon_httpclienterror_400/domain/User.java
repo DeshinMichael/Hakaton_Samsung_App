@@ -8,14 +8,16 @@ public class User {
     private String photoUrl;
     private String phone;
     private int progress;
+    private String password;
 
-    public User(long id, String name, String email, String photoUrl, String phone, int progress) {
+    public User(long id, String name, String email, String photoUrl, String phone, int progress, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.photoUrl = photoUrl;
         this.phone = phone;
         this.progress = progress;
+        this.password = password;
     }
 
     public long getId() {
@@ -38,7 +40,8 @@ public class User {
         return phone;
     }
 
-    public int getProgress() {
-        return progress;
-    }
+    public String getProgress() {return Integer.toString(progress);}
+
+    public String getPassword() {return Integer.toString(password.hashCode());}
+
 }
