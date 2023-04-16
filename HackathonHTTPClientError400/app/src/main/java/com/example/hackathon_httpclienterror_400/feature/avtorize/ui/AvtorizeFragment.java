@@ -1,4 +1,4 @@
-package com.example.hackathon_httpclienterror_400.avtorize.ui;
+package com.example.hackathon_httpclienterror_400.feature.avtorize.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 
-import com.example.hackathon_httpclienterror_400.avtorize.presentation.AvtorizeViewModel;
+import com.example.hackathon_httpclienterror_400.feature.avtorize.presentation.AvtorizeViewModel;
 import com.example.hackathon_httpclienterror_400.databinding.AvtorizeFragmentBinding;
 import com.example.hackathon_httpclienterror_400.feature.register.presentation.RegisterViewModel;
 

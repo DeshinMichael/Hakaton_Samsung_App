@@ -37,7 +37,7 @@
 
     <fragment
         android:id="@+id/sign_in"
-        android:name="com.example.hackathon_httpclienterror_400.avtorize.ui.AvtorizeFragment"
+        android:name="com.example.hackathon_httpclienterror_400.feature.avtorize.ui.AvtorizeFragment"
         tools:layout="@layout/avtorize_fragment">
         <action
             android:id="@+id/action_sign_in_to_student_list"
