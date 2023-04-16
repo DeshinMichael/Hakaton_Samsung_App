@@ -1,4 +1,4 @@
-package com.example.hackathon_httpclienterror_400.student_list.ui.recycler;
+package com.example.hackathon_httpclienterror_400.feature.student_list.ui.recycler;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;

@@ -1,4 +1,4 @@
-package com.example.hackathon_httpclienterror_400.main.ui;
+package com.example.hackathon_httpclienterror_400.feature.main.ui;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -18,7 +18,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-
+    public User user;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

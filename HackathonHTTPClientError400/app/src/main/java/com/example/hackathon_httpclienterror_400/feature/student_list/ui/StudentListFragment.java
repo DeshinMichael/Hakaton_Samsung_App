@@ -1,4 +1,4 @@
-package com.example.hackathon_httpclienterror_400.student_list.ui;
+package com.example.hackathon_httpclienterror_400.feature.student_list.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,8 +13,8 @@ import androidx.navigation.Navigation;
 
 import com.example.hackathon_httpclienterror_400.databinding.FragmentStudentListBinding;
 import com.example.hackathon_httpclienterror_400.domain.User;
-import com.example.hackathon_httpclienterror_400.student_list.ui.recycler.UserAdapter;
-import com.example.hackathon_httpclienterror_400.student_list.presentation.StudentListViewModel;
+import com.example.hackathon_httpclienterror_400.feature.student_list.ui.recycler.UserAdapter;
+import com.example.hackathon_httpclienterror_400.feature.student_list.presentation.StudentListViewModel;
 
 import java.util.List;
 
