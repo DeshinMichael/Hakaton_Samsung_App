@@ -1,4 +1,4 @@
-package com.example.hackathon_httpclienterror_400.presentation;
+package com.example.hackathon_httpclienterror_400.feature.profile.presentation;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;

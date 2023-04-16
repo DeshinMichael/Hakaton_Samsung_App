@@ -1,4 +1,4 @@
-package com.example.hackathon_httpclienterror_400.feature.main.ui.register.presentation;
+package com.example.hackathon_httpclienterror_400.feature.register.presentation;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -10,11 +10,8 @@ import androidx.lifecycle.ViewModel;
 
 import com.example.hackathon_httpclienterror_400.data.repository.UsersRepository;
 import com.example.hackathon_httpclienterror_400.domain.User;
-import com.example.hackathon_httpclienterror_400.feature.main.ui.MainActivity;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -25,6 +22,7 @@ public class RegisterViewModel extends ViewModel {
     private final MutableLiveData<List<User>> _users = new MutableLiveData<>();
     public LiveData<List<User>> users = _users;
     public List<User> __users__;
+    public User currentUser;
 
 
     public void load() {
@@ -49,10 +47,8 @@ public class RegisterViewModel extends ViewModel {
         boolean result = true;
         for (int i = 0; i < userList.size(); i++) {
             if (userList.get(i).getName().equals(new_user.getName())) {
-
                 result = false;
             }
-
         }
         return result;
     }

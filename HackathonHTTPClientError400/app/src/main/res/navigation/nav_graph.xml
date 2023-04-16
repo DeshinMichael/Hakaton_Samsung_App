@@ -7,42 +7,42 @@
 
     <fragment
         android:id="@+id/student_list"
-        android:name="com.example.hackathon_httpclienterror_400.student_list.ui.StudentListFragment"
+        android:name="com.example.hackathon_httpclienterror_400.feature.student_list.ui.StudentListFragment"
         tools:layout="@layout/fragment_student_list">
         <action
             android:id="@+id/action_student_list_to_profile"
             app:destination="@id/profile" />
-<!--        <action-->
-<!--            android:id="@+id/action_student_list_to_main_frag"-->
-<!--            app:destination="@id/main_frag" />-->
     </fragment>
 
     <fragment
         android:id="@+id/profile"
-        android:name="com.example.hackathon_httpclienterror_400.ui.ProfileFragment"
+        android:name="com.example.hackathon_httpclienterror_400.feature.profile.ui.ProfileFragment"
         tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_register"
+            app:destination="@id/register" />
         <argument
             android:name="id"
             app:argType="long"
             app:nullable="false" />
     </fragment>
-    <!--    <fragment-->
-    <!--        android:id="@+id/register"-->
-    <!--        android:name="com.example.hackatonapplication.feature.dashboard.ui.DashboardFragment"-->
-    <!--        tools:layout="@layout/fragment_dashboard">-->
-    <!--        <action-->
-    <!--            android:id="@+id/action_register_to_sign_in"-->
-    <!--            app:destination="@id/sign_in" />-->
-    <!--    </fragment>-->
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.hackathon_httpclienterror_400.feature.register.ui.RegisterFragment"
+        tools:layout="@layout/register_fragment">
+        <action
+            android:id="@+id/action_register_to_sign_in"
+            app:destination="@id/sign_in" />
+    </fragment>
 
-    <!--    <fragment-->
-    <!--        android:id="@+id/sign_in"-->
-    <!--        android:name="com.example.hackatonapplication.feature.dashboard.ui.DashboardFragment"-->
-    <!--        tools:layout="@layout/fragment_dashboard">-->
-    <!--        <action-->
-    <!--            android:id="@+id/action_sign_in_to_main_frag"-->
-    <!--            app:destination="@id/main_frag" />-->
-    <!--    </fragment>-->
+    <fragment
+        android:id="@+id/sign_in"
+        android:name="com.example.hackathon_httpclienterror_400.feature.avtorize.ui.AvtorizeFragment"
+        tools:layout="@layout/avtorize_fragment">
+        <action
+            android:id="@+id/action_sign_in_to_student_list"
+            app:destination="@id/student_list" />
+    </fragment>
 
     <!--    <fragment-->
     <!--        android:id="@+id/main_frag"-->
